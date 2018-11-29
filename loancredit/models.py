@@ -1,3 +1,8 @@
 from django.db import models
 
-# Create your models here.
+class Subscribe(models.Model):
+    name = models.CharField(max_length = 150, db_index = True)
+    email = models.EmailField(max_length = 150, blank = True, db_index = True)
+
+    def __str__(self):
+        return '{}'.format(self.title)
