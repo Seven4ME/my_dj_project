@@ -596,7 +596,7 @@ input#input-ui-slider-term {
 
 table tr,
 thead {
-    border-bottom: 1px solid #AFAFAF
+    border-bottom: 5px solid #F7F7F7
 }
 
 .another__text>p,
@@ -647,7 +647,8 @@ table th {
 }
 
 table tr {
-    background-color: #fff
+    background-color: #fff;
+    
 }
 
 table tr:last-child {
@@ -771,8 +772,9 @@ td .count-3 p[data-how-get]:hover::after {
 
 td .a-btn,
 td button {
-    width: 160px;
-    border-radius: 30px
+    width: 150px;
+    border-radius: 30px;
+    margin-right: 5px;
 }
 
 
@@ -2012,7 +2014,43 @@ table {
     border-radius: 50%;
 }
 
+/*Subscribe form*/
+.subscribe__form{
+    background-color: #fff;
+    padding: 10px;
+    border: 5px solid #ececec;
+    display: flex;
+    flex-direction: column;
+}
+.subscribe__form h4{
+    font-size: 13px;
+    text-align: center;
+    font-weight: bold;
+}
+.subscribe__form img{
+    width: 100%;
+}
+.input__wrapper input{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 3px solid #047bd0;
+    padding: 0 5px;
+}
+.subscribe__form .subscribe{
+    background: #16b877;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    border: 2px solid white;
+    font-weight: bold;
+}
+.subscribe__form .subscribe:hover{
+    cursor: pointer;
+    background-color: #12a56b;
+}
 
+/*End Subscribe form*/
 
 @media only screen and (max-width:1200px) {
    
@@ -2144,6 +2182,8 @@ table {
         height: 34px;
         line-height: 34px;
         margin: 0 5px
+
+        
     }
     tr td {
         height: 70px
